@@ -1,4 +1,4 @@
-// main.js
+var menu = require('./menu.js');
 
 // 控制应用生命周期和创建原生浏览器窗口的模组
 const { app, BrowserWindow } = require('electron')
@@ -25,6 +25,10 @@ function createWindow () {
 // 和创建浏览器窗口的时候调用
 // 部分 API 在 ready 事件触发后才能使用。
 app.whenReady().then(() => {
+  // init menu
+  menu.init();
+
+  // create window
   createWindow()
 
   app.on('activate', function () {

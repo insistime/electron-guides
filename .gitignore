@@ -1,0 +1,10 @@
+.idea
+.project
+.settings
+.externalToolBuilders
+
+dist
+node_modules
+tests/coverage
+jsdoc
+package-lock.json

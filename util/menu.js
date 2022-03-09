@@ -1,93 +1,87 @@
+// electron
 var electron = require('electron');
 
+/**
+ * init menu
+ */
 exports.init = function(){
     var docMenus = [
         {
-            label: 'menu_label_yach',
+            label: 'app',
             submenu: [
                 {
-                    label: 'menu_about',
+                    label: '关于',
                     role: 'about'
                 },
                 {
                     type: 'separator'
                 },
                 {
-                    label: 'system_preferences',
-                    accelerator: 'CmdOrCtrl+,',
-                    click: function(item, focusedWindow) {
-                        // if (focusedWindow) windowHandle.createWindow('systemset');
-                    }
-                },
-                {
-                    type: 'separator'
-                },
-                {
-                    label: 'menu_hide',
+                    label: '隐藏',
                     role: 'hide'
                 },
                 {
-                    label: 'menu_hideOthers',
+                    label: '隐藏其他',
                     role: 'hideOthers'
                 },
                 {
                     type: 'separator'
                 },
                 {
-                    label: 'menu_hideOthers',
+                    label: '退出',
                     role: 'quit'
                 }
             ]
         },
         {
-            label: 'menu_label_edit',
+            label: '编辑',
             submenu: [
                 {
-                    label: 'menu_undo',
+                    label: '撤销',
                     role: 'undo'
                 },
                 {
-                    label: 'menu_redo',
+                    label: '重做',
                     role: 'redo'
                 },
                 {
                     type: 'separator'
                 },
                 {
-                    label: 'menu_cut',
+                    label: '剪切',
                     role: 'cut'
                 },
                 {
-                    label: 'menu_copy',
+                    label: '复制',
                     role: 'copy'
                 },
                 {
-                    label: 'menu_paste',
+                    label: '粘贴',
                     role: 'paste'
                 },
                 {
-                    label: 'menu_delete',
+                    label: '删除',
                     role: 'delete'
                 },
                 {
-                    label: 'menu_selectAll',
+                    label: '选中所有',
                     role: 'selectAll'
                 }
             ]
         },
         {
-            label: 'menu_label_window',
+            label: '窗口',
             submenu: [
                 {
-                    label: 'menu_minimize',
+                    label: '最小化',
                     role: 'minimize'
                 },
                 {
-                    label: 'menu_close',
+                    label: '关闭',
                     role: 'close'
                 },
                 {
-                    label: 'menu_togglefullscreen',
+                    label: '自动全屏',
                     role: 'togglefullscreen'
                 }
             ]
@@ -96,7 +90,7 @@ exports.init = function(){
             label: '调试',
             submenu: [
                 {
-                    label: 'toggleDevTools',
+                    label: '调试',
                     role: 'toggleDevTools'
                 }
             ]

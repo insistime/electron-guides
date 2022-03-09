@@ -29,6 +29,6 @@
     "husky": "^7.0.4"
   },
   "dependencies": {
-    "qiao-electron": "^0.0.3"
+    "qiao-electron": "^0.0.4"
   }
 }

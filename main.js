@@ -33,10 +33,7 @@ app.whenReady().then(() => {
   q.setApplicationMenu();
 
   // set about version
-  app.setAboutPanelOptions({
-      applicationVersion: version,
-      version: version
-  });
+  q.setAboutVersion(version);
 
   // create window
   createWindow()

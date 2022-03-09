@@ -5,4 +5,5 @@
 1. init project
 2. start electron
 3. add menu
+4. modify menu
 

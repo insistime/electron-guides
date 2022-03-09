@@ -1,0 +1,24 @@
+{
+  "name": "electron-guides",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "electron guides",
+  "keywords": [
+    "electron",
+    "guides"
+  ],
+  "scripts": {
+  },
+  "author": {
+    "name": "qiaowenbin",
+    "email": "npm@insistime.com",
+    "url": "https://insistime.com"
+  },
+  "funding": "http://uikoo9.com/donate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insistime/electron-guides.git"
+  },
+  "devDependencies": {
+  }
+}

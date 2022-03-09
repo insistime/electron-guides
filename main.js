@@ -1,6 +1,9 @@
 // qiao-electron
 var q = require('qiao-electron');
 
+// version
+var version = require('./package.json').version;
+
 // 控制应用生命周期和创建原生浏览器窗口的模组
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
@@ -26,8 +29,14 @@ function createWindow () {
 // 和创建浏览器窗口的时候调用
 // 部分 API 在 ready 事件触发后才能使用。
 app.whenReady().then(() => {
-  // init menu
+  // set application menu
   q.setApplicationMenu();
+
+  // set about version
+  app.setAboutPanelOptions({
+      applicationVersion: version,
+      version: version
+  });
 
   // create window
   createWindow()

@@ -27,5 +27,8 @@
     "@commitlint/config-conventional": "^16.2.1",
     "electron": "^17.1.1",
     "husky": "^7.0.4"
+  },
+  "dependencies": {
+    "qiao-electron": "^0.0.3"
   }
 }

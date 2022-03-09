@@ -1,4 +1,5 @@
-var menu = require('./util/menu.js');
+// qiao-electron
+var q = require('qiao-electron');
 
 // 控制应用生命周期和创建原生浏览器窗口的模组
 const { app, BrowserWindow } = require('electron')
@@ -26,7 +27,7 @@ function createWindow () {
 // 部分 API 在 ready 事件触发后才能使用。
 app.whenReady().then(() => {
   // init menu
-  menu.init();
+  q.setApplicationMenu();
 
   // create window
   createWindow()

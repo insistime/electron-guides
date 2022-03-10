@@ -9,6 +9,8 @@
   ],
   "scripts": {
     "start": "electron src",
+    "prebuild": "cd src && npm i",
+    "build": "node electron-packager.js",
     "prepare": "husky install"
   },
   "author": {

@@ -9,7 +9,8 @@ var options = {
     appVersion      : '0.0.1',
     overwrite       : true,
     arch            : 'x64',
-    name            : 'vq'
+    name            : 'vq',
+    icon            : require('path').resolve(__dirname, './icon/icon.icns')
 };
 
 // pack

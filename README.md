@@ -5,6 +5,7 @@
 1. 拆分代码结构
 2. electron packager
 3. npm run build
+4. mac icns
 
 ### 0.0.1.20220309
 1. init project

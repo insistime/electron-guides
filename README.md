@@ -5,6 +5,7 @@
 1. qiao-electron-cli
 2. pack mac
 3. pack dmg
+4. pack dmg by cli
 
 ### 0.0.2.20220310
 1. 拆分代码结构

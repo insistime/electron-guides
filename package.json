@@ -1,6 +1,6 @@
 {
   "name": "electron-guides",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "description": "electron guides",
   "keywords": [
@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "start": "electron src",
-    "prebuild": "cd src && npm i",
-    "build": "node ./build/electron-packager.js",
+    "prepackmac": "cd src && npm i",
+    "packmac": "qelectron pm ./packmac.config.js",
     "prepare": "husky install"
   },
   "author": {
@@ -28,6 +28,7 @@
     "@commitlint/config-conventional": "^16.2.1",
     "electron": "^17.1.1",
     "electron-packager": "^15.4.0",
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "qiao-electron-cli": "^0.0.2"
   }
 }

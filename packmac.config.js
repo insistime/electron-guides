@@ -1,8 +1,4 @@
-// electron pakcager
-var electronPackager    = require('electron-packager');
-
-// options
-var options = {
+module.exports = {
     dir             : 'src',
     out             : 'out',
     appCopyright    : 'Copyright © 2022 vq版权所有',
@@ -12,6 +8,3 @@ var options = {
     name            : 'vq',
     icon            : require('path').resolve(__dirname, './icon/icon.icns')
 };
-
-// pack
-electronPackager(options);

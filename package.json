@@ -11,7 +11,7 @@
     "start": "electron src",
     "prepackmac": "cd src && npm i",
     "packmac": "qelectron pm ./pack/packmac.config.js",
-    "packdmg": "node ./pack/pack-dmg.js",
+    "packdmg": "qelectron pd ./pack/packdmg.config.js",
     "prepare": "husky install"
   },
   "author": {
@@ -28,8 +28,7 @@
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
     "electron": "^17.1.1",
-    "electron-installer-dmg": "^3.0.0",
     "husky": "^7.0.4",
-    "qiao-electron-cli": "^0.0.2"
+    "qiao-electron-cli": "^0.0.3"
   }
 }

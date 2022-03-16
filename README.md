@@ -5,6 +5,7 @@
 1. electron src
 2. electron pack
 3. electron pack
+4. electron src main and renderer
 
 ### 0.0.3.20220311
 1. qiao-electron-cli

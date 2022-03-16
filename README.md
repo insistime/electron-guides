@@ -6,6 +6,8 @@
 2. electron pack
 3. electron pack
 4. electron src main and renderer
+5. electron renderer login
+6. electron renderer index
 
 ### 0.0.3.20220311
 1. qiao-electron-cli

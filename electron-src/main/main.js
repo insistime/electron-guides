@@ -21,10 +21,10 @@ app.whenReady().then(() => {
   appInit();
 
   // create window
-  win.createWindow();
+  win.createLoginWindow();
 
   // activate
   app.on('activate', function(){
-    if (BrowserWindow.getAllWindows().length === 0) win.createWindow();
+    if (BrowserWindow.getAllWindows().length === 0) win.createLoginWindow();
   });
 });

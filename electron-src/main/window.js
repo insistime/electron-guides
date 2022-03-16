@@ -8,19 +8,10 @@ var electron = require('electron');
 var BrowserWindow = electron.BrowserWindow;
 
 /**
- * create window
+ * create login window
+ * @returns 
  */
-exports.createWindow = function(){
-  var loginWin = createLoginWindow();
-
-//   setTimeout(() => {
-//     loginWin.close();
-//     createIndexWindow();
-//   }, 2000);
-};
-
-// create login window
-function createLoginWindow(){
+exports.createLoginWindow = function(){
   var options = {
     width: 200,
     height: 300,
@@ -38,10 +29,18 @@ function createLoginWindow(){
   win.loadFile(path.join(__dirname, '../renderer-login/dist/index.html'));
 
   return win;
-}
+};
 
-// create index window
-function createIndexWindow(){
+/**
+ * open index window
+ */
+exports.openIndexWindow = function(){
+  var windows = BrowserWindow.getAllWindows();
+  if(!windows || !windows.length) return;
+
+  var loginWindow = windows[0];
+  loginWindow.close();
+
   var options = {
     width: 800,
     height: 600,
@@ -50,4 +49,4 @@ function createIndexWindow(){
 
   var win = new BrowserWindow(options);
   win.loadFile(path.join(__dirname, '../renderer-index/dist/index.html'));
-}
+};

@@ -3,8 +3,8 @@
 // path
 var path = require('path');
 
-// src package.json
-var srcPkg = require('../src/package.json');
+// electron-src package.json
+var srcPkg = require('../electron-src/package.json');
 
 // app config
 module.exports = {

@@ -8,8 +8,8 @@
     "guides"
   ],
   "scripts": {
-    "start": "electron src",
-    "prepackmac": "cd src && npm i",
+    "start": "electron electron-src",
+    "prepackmac": "cd electron-src && npm i",
     "packmac": "qelectron pm ./pack/packmac.config.js",
     "packdmg": "qelectron pd ./pack/packdmg.config.js"
   },

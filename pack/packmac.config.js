@@ -5,7 +5,7 @@ var appConfig = require('./app.config.js');
 
 // packmac config
 module.exports = {
-    dir             : 'src',
+    dir             : 'electron-src',
     out             : 'out',
     arch            : 'x64',
     name            : appConfig.appName,

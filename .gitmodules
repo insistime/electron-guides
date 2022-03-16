@@ -1,0 +1,3 @@
+[submodule "electron-src/renderer-login"]
+	path = electron-src/renderer-login
+	url = git@github.com:insistime-guides/electron-renderer-login.git

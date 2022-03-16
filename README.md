@@ -1,6 +1,11 @@
 # electron-guides
 
 ## version
+### 0.0.4.20220316
+1. electron src
+2. electron pack
+3. electron pack
+
 ### 0.0.3.20220311
 1. qiao-electron-cli
 2. pack mac

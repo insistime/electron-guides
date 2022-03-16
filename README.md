@@ -9,6 +9,7 @@
 5. electron renderer login
 6. electron renderer index
 7. init and build all
+8. custom login window
 
 ### 0.0.3.20220311
 1. qiao-electron-cli

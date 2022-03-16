@@ -12,14 +12,11 @@ function createWindow () {
   // 创建浏览器窗口
   const mainWindow = new BrowserWindow({
     width: 800,
-    height: 600,
-    webPreferences: {
-      preload: path.join(__dirname, '../renderer-index/preload.js')
-    }
+    height: 600
   })
 
   // 加载 index.html
-  mainWindow.loadFile(path.join(__dirname, '../renderer-index/index.html'))
+  mainWindow.loadFile(path.join(__dirname, '../renderer-login/dist/index.html'))
 
   // 打开开发工具
   // mainWindow.webContents.openDevTools()

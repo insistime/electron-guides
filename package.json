@@ -8,8 +8,12 @@
     "guides"
   ],
   "scripts": {
+    "init": "npm i && cd electron-src && npm i && cd renderer-index && npm i && cd ../renderer-login && npm i",
+    "build-index": "cd electron-src/renderer-index && npm run build",
+    "build-login": "cd electron-src/renderer-login && npm run build",
+    "build-all": "npm run build-index && npm run build-login",
     "start": "electron electron-src",
-    "prepackmac": "cd electron-src && npm i",
+    "prepackmac": "npm run init && npm run build-all",
     "packmac": "qelectron pm ./electron-pack/packmac.config.js",
     "packdmg": "qelectron pd ./electron-pack/packdmg.config.js"
   },

@@ -3,6 +3,6 @@
 .settings
 .externalToolBuilders
 
-out
+electron-out
 node_modules
 package-lock.json

@@ -16,7 +16,7 @@ var appEnv = 'online';
 var appPath = path.resolve(__dirname, `../${packmacConfig.out}/${appConfig.appName}-darwin-${packmacConfig.arch}/${appConfig.appName}.app`);
 
 // background
-var background = path.resolve(__dirname, '../static/bg.png');
+var background = path.resolve(__dirname, './static/bg.png');
 
 // packdmg config
 module.exports = {
@@ -30,5 +30,5 @@ module.exports = {
     overwrite       : true,
     debug           : false,
 
-    out             : path.resolve(__dirname, '../out/dmg')
+    out             : path.resolve(__dirname, '../electron-out/dmg')
 };

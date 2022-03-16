@@ -10,8 +10,8 @@
   "scripts": {
     "start": "electron electron-src",
     "prepackmac": "cd electron-src && npm i",
-    "packmac": "qelectron pm ./pack/packmac.config.js",
-    "packdmg": "qelectron pd ./pack/packdmg.config.js"
+    "packmac": "qelectron pm ./electron-pack/packmac.config.js",
+    "packdmg": "qelectron pd ./electron-pack/packdmg.config.js"
   },
   "author": {
     "name": "qiaowenbin",

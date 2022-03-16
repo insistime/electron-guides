@@ -12,6 +12,8 @@ var app = electron.app;
 var appInit = require('./app-init.js');
 require('./app-event.js');
 
+// window
+var win = require('./window.js');
 
 // app ready
 app.whenReady().then(() => {
@@ -19,25 +21,10 @@ app.whenReady().then(() => {
   appInit();
 
   // create window
-  createWindow();
+  win.createWindow();
 
   // activate
   app.on('activate', function(){
-    if (BrowserWindow.getAllWindows().length === 0) createWindow();
+    if (BrowserWindow.getAllWindows().length === 0) win.createWindow();
   });
 });
-
-// create window
-function createWindow(){
-  var options = {
-    width: 200,
-    height: 300,
-    center: true,
-    maximizable: false,
-    fullscreenable: false,
-    backgroundColor: '#66CD00'
-  };
-
-  var mainWindow = new BrowserWindow(options);
-  mainWindow.loadFile(path.join(__dirname, '../renderer-login/dist/index.html'));
-}

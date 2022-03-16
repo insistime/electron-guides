@@ -29,10 +29,15 @@ app.whenReady().then(() => {
 
 // create window
 function createWindow(){
-  var mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600
-  });
+  var options = {
+    width: 200,
+    height: 300,
+    center: true,
+    maximizable: false,
+    fullscreenable: false,
+    backgroundColor: '#66CD00'
+  };
 
+  var mainWindow = new BrowserWindow(options);
   mainWindow.loadFile(path.join(__dirname, '../renderer-login/dist/index.html'));
 }

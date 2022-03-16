@@ -1,8 +1,5 @@
 'use strict';
 
-// path
-var path = require('path');
-
 // electron
 var electron = require('electron');
 var BrowserWindow = electron.BrowserWindow;
@@ -14,6 +11,9 @@ require('./app-event.js');
 
 // window
 var win = require('./window.js');
+
+// ipc
+require('./ipc.js');
 
 // app ready
 app.whenReady().then(() => {

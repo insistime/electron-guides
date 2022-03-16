@@ -13,10 +13,10 @@ var BrowserWindow = electron.BrowserWindow;
 exports.createWindow = function(){
   var loginWin = createLoginWindow();
 
-  setTimeout(() => {
-    loginWin.close();
-    createIndexWindow();
-  }, 2000);
+//   setTimeout(() => {
+//     loginWin.close();
+//     createIndexWindow();
+//   }, 2000);
 };
 
 // create login window
@@ -27,7 +27,11 @@ function createLoginWindow(){
     center: true,
     maximizable: false,
     fullscreenable: false,
-    backgroundColor: '#66CD00'
+    backgroundColor: '#66CD00',
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false
+    }
   };
 
   var win = new BrowserWindow(options);

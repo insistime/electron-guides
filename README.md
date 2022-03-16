@@ -11,6 +11,7 @@
 7. init and build all
 8. custom login window
 9. open index window
+10. ipc main ok
 
 ### 0.0.3.20220311
 1. qiao-electron-cli

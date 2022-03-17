@@ -2,7 +2,9 @@
 
 // electron
 var electron = require('electron');
-var BrowserWindow = electron.BrowserWindow;
+
+// qiao-electron
+var q = require('qiao-electron');
 
 // app
 var app = electron.app;
@@ -25,6 +27,6 @@ app.whenReady().then(() => {
 
   // activate
   app.on('activate', function(){
-    if (BrowserWindow.getAllWindows().length === 0) win.createLoginWindow();
+    if(q.window.getAllWindows().length === 0) win.createLoginWindow();
   });
 });

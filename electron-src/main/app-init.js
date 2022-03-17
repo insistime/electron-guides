@@ -3,9 +3,6 @@
 // qiao-electron
 var q = require('qiao-electron');
 
-// version
-var version = require('../package.json').version;
-
 /**
  * app init
  */
@@ -14,5 +11,5 @@ module.exports = function(){
   q.setApplicationMenu();
   
   // set about version
-  q.setAboutVersion(version);
+  q.setAboutVersion(require('../package.json').version);
 };

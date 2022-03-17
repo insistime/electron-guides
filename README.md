@@ -1,6 +1,9 @@
 # electron-guides
 
 ## version
+### 0.0.5.20220317
+1. electron dist
+
 ### 0.0.4.20220316
 1. electron src
 2. electron pack

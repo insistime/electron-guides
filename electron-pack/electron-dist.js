@@ -11,14 +11,12 @@ function electronDist(){
     // mkdir
     mkDir(electronDistPath);
 
-    // cp folder
-    cpDir('main');
-    cpDir('node_modules');
-    cpDir('renderer-index/dist');
-    cpDir('renderer-login/dist');
-
-    // cp file
-    cpFile('package.json');
+    // cp file or folder
+    cpFileOrFolder('main');
+    cpFileOrFolder('node_modules');
+    cpFileOrFolder('renderer-index/dist');
+    cpFileOrFolder('renderer-login/dist');
+    cpFileOrFolder('package.json');
 }
 
 // make electron-dist dir
@@ -29,7 +27,7 @@ function mkDir(src){
         if(q.isExists(src)) q.rm(`${src}/`);
 
         // mkdir
-        q.fs.mkdirSync(src);
+        q.mkdir(`${src}/`);
     }catch(e){
         console.log(e);
         res = 'fail';
@@ -38,34 +36,19 @@ function mkDir(src){
     console.log(`make dir: ${src} ${res}`);
 }
 
-// cp dir
-function cpDir(src){
+// cp file or folder
+function cpFileOrFolder(src){
     var res = 'success';
     try {
         var srcPath = q.path.resolve(__dirname, `../electron-src/${src}`);
         var destPath = q.path.resolve(__dirname, `../electron-dist/${src}`);
-        q.fs.cpSync(srcPath, destPath, {recursive:true});
+        q.cp(srcPath, destPath);
     }catch(e){
         console.log(e);
         res = 'fail';
     }
 
-    console.log(`cp dir: electron-src/${src} ${res}`);
-}
-
-// cp file
-function cpFile(src){
-    var res = 'success';
-    try {
-        var srcPath = q.path.resolve(__dirname, `../electron-src/${src}`);
-        var destPath = q.path.resolve(__dirname, `../electron-dist/${src}`);
-        q.fs.copyFileSync(srcPath, destPath);
-    }catch(e){
-        console.log(e);
-        res = 'fail';
-    }
-
-    console.log(`cp file: electron-src/${src} ${res}`);
+    console.log(`cp: electron-src/${src} ${res}`);
 }
 
 // run

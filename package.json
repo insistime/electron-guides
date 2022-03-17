@@ -30,6 +30,6 @@
   "devDependencies": {
     "electron": "^17.1.1",
     "qiao-electron-cli": "^0.0.3",
-    "qiao.util.file": "^0.1.2"
+    "qiao.util.file": "^0.1.4"
   }
 }

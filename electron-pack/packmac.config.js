@@ -8,6 +8,8 @@ module.exports = {
     dir             : 'electron-dist',
     out             : 'electron-out',
     arch            : 'x64',
+    asar            : true,
+    overwrite       : true,
     name            : appConfig.appName,
     icon            : appConfig.appIconPath,
     appVersion      : appConfig.appVersion,

@@ -3,6 +3,7 @@
 ## version
 ### 0.0.5.20220317
 1. electron dist
+2. electron asar
 
 ### 0.0.4.20220316
 1. electron src

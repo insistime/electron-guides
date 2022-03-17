@@ -12,8 +12,8 @@
     "build-index": "cd electron-src/renderer-index && npm run build",
     "build-login": "cd electron-src/renderer-login && npm run build",
     "build-all": "npm run build-index && npm run build-login",
-    "dist": "node ./electron-pack/electron-dist.js",
     "start": "electron electron-src",
+    "dist": "qelectron d ./electron-pack/dist.config.js",
     "prepackmac": "npm run init && npm run build-all && npm run dist",
     "packmac": "qelectron pm ./electron-pack/packmac.config.js",
     "packdmg": "qelectron pd ./electron-pack/packdmg.config.js"
@@ -28,8 +28,7 @@
     "url": "git+https://github.com/insistime/electron-guides.git"
   },
   "devDependencies": {
-    "electron": "^17.1.1",
-    "qiao-electron-cli": "^0.0.3",
-    "qiao.util.file": "^0.1.4"
+    "electron": "^17.1.2",
+    "qiao-electron-cli": "^0.0.8"
   }
 }

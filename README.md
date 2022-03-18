@@ -1,6 +1,9 @@
 # electron-guides
 
 ## version
+### 0.0.6.20220318
+1. add log
+
 ### 0.0.5.20220317
 1. electron dist
 2. electron asar

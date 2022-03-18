@@ -15,7 +15,8 @@ require('./app-event.js');
 var win = require('./window.js');
 
 // ipc
-require('./ipc.js');
+require('./ipc/ipc.js');
+require('./ipc/ipc-log.js');
 
 // app ready
 app.whenReady().then(() => {

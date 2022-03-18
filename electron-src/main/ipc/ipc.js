@@ -5,7 +5,7 @@ var electron = require('electron');
 var ipcMain = electron.ipcMain;
 
 // win
-var win = require('./window.js');
+var win = require('../window.js');
 
 // ipc
 ipcMain.handle('ipc-login-success', function(event, ...args){

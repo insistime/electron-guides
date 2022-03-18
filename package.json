@@ -30,5 +30,8 @@
   "devDependencies": {
     "electron": "^17.1.2",
     "qiao-electron-cli": "^0.0.8"
+  },
+  "dependencies": {
+    "log4js": "^6.4.3"
   }
 }

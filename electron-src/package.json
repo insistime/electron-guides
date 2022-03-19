@@ -1,9 +1,0 @@
-{
-  "name": "vq",
-  "version": "0.0.1",
-  "description": "vq",
-  "main": "./main/main.js",
-  "dependencies": {
-    "qiao-electron": "^0.1.0"
-  }
-}

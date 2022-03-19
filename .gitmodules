@@ -1,3 +1,0 @@
-[submodule "electron-src"]
-	path = electron-src
-	url = git@github.com:insistime-guides/electron-main.git

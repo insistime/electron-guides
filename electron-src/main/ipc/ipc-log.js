@@ -4,8 +4,8 @@
 var electron = require('electron');
 var ipcMain = electron.ipcMain;
 
-// log
-var log = require('../util/log.js');
+// q
+var q = require('qiao-electron');
 
 // ipc
 /**
@@ -13,10 +13,9 @@ var log = require('../util/log.js');
  *  arg {msg:'',type:''}
  */
 ipcMain.on('renderer-log', function(event, arg){
-  console.log(arg);
   // check
   if(!arg || !arg.msg) return;
 
   // log
-  log.log(arg.msg, arg.type);
+  q.log(arg.msg, arg.type);
 });

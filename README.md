@@ -3,6 +3,7 @@
 ## version
 ### 0.0.7.20220319
 1. add sentry
+2. del log4js
 
 ### 0.0.6.20220318
 1. add log

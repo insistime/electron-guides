@@ -7,13 +7,13 @@ var path = require('path');
  * dist.config.js
  */
 module.exports = {
-    srcPath     : 'electron-src',
+    srcPath     : 'electron-src/electron-app',
     distPath    : 'electron-dist',
     srcFiles    : [
         'main',
         'node_modules',
-        'renderer-index/dist',
-        'renderer-login/dist',
+        'renderer-index',
+        'renderer-login',
         'package.json'
     ]
 };

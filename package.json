@@ -8,13 +8,14 @@
     "guides"
   ],
   "scripts": {
-    "build-main": "cd electron-src/electron-app && npm i",
-    "build-index": "cd electron-src/renderer-index && npm i && npm run build",
-    "build-login": "cd electron-src/renderer-login && npm i && npm run build",
-    "build-all": "npm run build-main && npm run build-index && npm run build-login",
+    "init-pack": "npm i",
+    "init-main": "cd electron-src/electron-app && npm i",
+    "init-renderer": "cd electron-src/electron-renderer && npm i",
+    "init-all": "npm run init-pack && npm run init-main && npm run init-renderer",
+    "build": "cd electron-src/electron-renderer && npm run build",
     "start": "electron electron-src/electron-app",
     "dist": "qelectron d ./electron-pack/dist.config.js",
-    "prepackmac": "npm run build-all && npm run dist",
+    "prepackmac": "npm run init-all && npm run build && npm run dist",
     "packmac": "qelectron pm ./electron-pack/packmac.config.js",
     "packdmg": "qelectron pd ./electron-pack/packdmg.config.js"
   },

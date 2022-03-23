@@ -4,6 +4,7 @@
 ### 0.0.8.20220323
 1. window ready to show
 2. hide title bar
+3. renderer ok
 
 ### 0.0.7.20220319
 1. add sentry

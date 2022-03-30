@@ -39,5 +39,5 @@ module.exports = {
     overwrite       : true,
     debug           : false,
 
-    out             : path.resolve(__dirname, '../devtools-out/dmg')
+    out             : path.resolve(__dirname, '../electron-out/dmg')
 };

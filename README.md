@@ -1,6 +1,9 @@
 # electron-guides
 
 ## version
+### 0.0.9.20220330
+1. preload
+
 ### 0.0.8.20220323
 1. window ready to show
 2. hide title bar

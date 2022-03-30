@@ -4,6 +4,8 @@
 ### 0.0.9.20220330
 1. preload
 2. log path
+3. qiao-config
+4. open window by ls
 
 ### 0.0.8.20220323
 1. window ready to show

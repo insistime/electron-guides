@@ -1,22 +1,30 @@
 'use strict';
 
 // path
-var path = require('path');
+const path = require('path');
 
 // app config
-var appConfig = require('./app.config.js');
+const appConfig = require('./app.config.js');
 
 // packmac config
-var packmacConfig = require('./packmac.config.js');
+const packmacConfig = require('./packmac.config.js');
 
 // app env
-var appEnv = 'online';
+const appEnv = 'online';
 
 // app path
-var appPath = path.resolve(__dirname, `../${packmacConfig.out}/${appConfig.appName}-darwin-${packmacConfig.arch}/${appConfig.appName}.app`);
+const appPath = path.resolve(__dirname, `../${packmacConfig.out}/${appConfig.appName}-darwin-${packmacConfig.arch}/${appConfig.appName}.app`);
 
 // background
-var background = path.resolve(__dirname, './static/bg.png');
+const background = path.resolve(__dirname, './static/bg.png');
+
+// get contents
+const getContents = () => {
+    return [ 
+        { x: 520, y: 200, type: 'link', path: '/Applications' },
+        { x: 120, y: 200, type: 'file', path: appPath } 
+    ];
+};
 
 // packdmg config
 module.exports = {
@@ -26,9 +34,10 @@ module.exports = {
     icon            : appConfig.appIconPath,
     iconSize        : 80,
     background      : background,
+    contents        : getContents(),
 
     overwrite       : true,
     debug           : false,
 
-    out             : path.resolve(__dirname, '../electron-out/dmg')
+    out             : path.resolve(__dirname, '../devtools-out/dmg')
 };

@@ -1,10 +1,10 @@
 'use strict';
 
 // path
-var path = require('path');
+const path = require('path');
 
 // electron-src package.json
-var srcPkg = require('../electron-src/electron-app/package.json');
+const srcPkg = require('../electron-src/electron-app/package.json');
 
 // app config
 module.exports = {

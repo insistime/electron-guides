@@ -1,8 +1,5 @@
 'use strict';
 
-// path
-var path = require('path');
-
 /**
  * dist.config.js
  */
@@ -12,8 +9,7 @@ module.exports = {
     srcFiles    : [
         'main',
         'node_modules',
-        'renderer-index',
-        'renderer-login',
+        'renderer',
         'package.json'
     ]
 };

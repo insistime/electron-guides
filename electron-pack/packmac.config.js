@@ -1,7 +1,7 @@
 'use strict';
 
 // app config
-var appConfig = require('./app.config.js');
+const appConfig = require('./app.config.js');
 
 // packmac config
 module.exports = {

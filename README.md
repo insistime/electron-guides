@@ -1,6 +1,9 @@
 # electron-guides
 
 ## version
+### 0.1.0.20220331
+1. log init
+
 ### 0.0.9.20220330
 1. preload
 2. log path

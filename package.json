@@ -30,7 +30,7 @@
     "url": "git+https://github.com/insistime/electron-guides.git"
   },
   "devDependencies": {
-    "electron": "^18.0.0 ",
-    "qiao-electron-cli": "^0.0.8"
+    "electron": "^18.0.1",
+    "qiao-electron-cli": "^0.1.1"
   }
 }

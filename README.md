@@ -1,6 +1,9 @@
 # electron-guides
 
 ## version
+### 0.1.1.20220401
+1. dev
+
 ### 0.1.0.20220331
 1. log init
 2. shortcut

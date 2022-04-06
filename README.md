@@ -24,6 +24,9 @@
 ### 0.0.7.20220319
 1. add sentry
 2. del log4js
+3. init ipc log
+4. init menu
+5. init window
 
 ### 0.0.6.20220318
 1. add log
@@ -63,4 +66,3 @@
 2. start electron
 3. add menu
 4. modify menu
-

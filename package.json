@@ -10,8 +10,10 @@
   "scripts": {
     "init-pack": "npm i",
     "init-main": "cd electron-src/electron-app && npm i",
+    "init-main-m1": "cd electron-src/electron-app && npm i --target_arch=arm64",
     "init-renderer": "cd electron-src/electron-renderer && npm i",
     "init-all": "npm run init-pack && npm run init-main && npm run init-renderer",
+    "init-all-m1": "npm run init-pack && npm run init-main-m1 && npm run init-renderer",
     "build": "cd electron-src/electron-renderer && npm run build",
     "start": "electron electron-src/electron-app",
     "dev": "electron electron-src/electron-app dev",
